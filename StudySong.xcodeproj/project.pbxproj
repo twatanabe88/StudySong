@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E20CAD31D281C4800A53015 /* SearchSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E20CAD21D281C4800A53015 /* SearchSongViewController.swift */; };
+		4E20CAD51D28222800A53015 /* PlayView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E20CAD41D28222800A53015 /* PlayView.storyboard */; };
+		4E20CAD71D28230500A53015 /* PlayViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E20CAD61D28230500A53015 /* PlayViewViewController.swift */; };
 		4EA1F0A21D280E3900D362A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA1F0A11D280E3900D362A7 /* AppDelegate.swift */; };
 		4EA1F0A41D280E3900D362A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA1F0A31D280E3900D362A7 /* ViewController.swift */; };
 		4EA1F0A71D280E3900D362A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA1F0A51D280E3900D362A7 /* Main.storyboard */; };
 		4EA1F0A91D280E3900D362A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA1F0A81D280E3900D362A7 /* Assets.xcassets */; };
 		4EA1F0AC1D280E3900D362A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA1F0AA1D280E3900D362A7 /* LaunchScreen.storyboard */; };
+		4EA1F0B41D280ED400D362A7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA1F0B31D280ED400D362A7 /* Login.storyboard */; };
+		4EA1F0B61D2810A800D362A7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA1F0B51D2810A800D362A7 /* LoginViewController.swift */; };
+		4EA1F0B81D2810B600D362A7 /* InputWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA1F0B71D2810B600D362A7 /* InputWordViewController.swift */; };
+		4EA1F0BA1D2810FD00D362A7 /* RememberWordCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA1F0B91D2810FD00D362A7 /* RememberWordCustomCell.swift */; };
+		4EA1F0BC1D28112800D362A7 /* InputWord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA1F0BB1D28112800D362A7 /* InputWord.storyboard */; };
+		4EA1F0BE1D28134400D362A7 /* SearchSong.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA1F0BD1D28134400D362A7 /* SearchSong.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E20CAD21D281C4800A53015 /* SearchSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSongViewController.swift; sourceTree = "<group>"; };
+		4E20CAD41D28222800A53015 /* PlayView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayView.storyboard; sourceTree = "<group>"; };
+		4E20CAD61D28230500A53015 /* PlayViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewViewController.swift; sourceTree = "<group>"; };
 		4EA1F09E1D280E3900D362A7 /* StudySong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudySong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA1F0A11D280E3900D362A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EA1F0A31D280E3900D362A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +34,12 @@
 		4EA1F0A81D280E3900D362A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EA1F0AB1D280E3900D362A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EA1F0AD1D280E3900D362A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EA1F0B31D280ED400D362A7 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		4EA1F0B51D2810A800D362A7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4EA1F0B71D2810B600D362A7 /* InputWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputWordViewController.swift; sourceTree = "<group>"; };
+		4EA1F0B91D2810FD00D362A7 /* RememberWordCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RememberWordCustomCell.swift; sourceTree = "<group>"; };
+		4EA1F0BB1D28112800D362A7 /* InputWord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputWord.storyboard; sourceTree = "<group>"; };
+		4EA1F0BD1D28134400D362A7 /* SearchSong.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchSong.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +72,21 @@
 		4EA1F0A01D280E3900D362A7 /* StudySong */ = {
 			isa = PBXGroup;
 			children = (
+				4EA1F0A81D280E3900D362A7 /* Assets.xcassets */,
+				4EA1F0AD1D280E3900D362A7 /* Info.plist */,
 				4EA1F0A11D280E3900D362A7 /* AppDelegate.swift */,
 				4EA1F0A31D280E3900D362A7 /* ViewController.swift */,
+				4EA1F0B51D2810A800D362A7 /* LoginViewController.swift */,
+				4EA1F0B71D2810B600D362A7 /* InputWordViewController.swift */,
+				4EA1F0B91D2810FD00D362A7 /* RememberWordCustomCell.swift */,
+				4E20CAD21D281C4800A53015 /* SearchSongViewController.swift */,
+				4E20CAD61D28230500A53015 /* PlayViewViewController.swift */,
 				4EA1F0A51D280E3900D362A7 /* Main.storyboard */,
-				4EA1F0A81D280E3900D362A7 /* Assets.xcassets */,
 				4EA1F0AA1D280E3900D362A7 /* LaunchScreen.storyboard */,
-				4EA1F0AD1D280E3900D362A7 /* Info.plist */,
+				4EA1F0B31D280ED400D362A7 /* Login.storyboard */,
+				4EA1F0BB1D28112800D362A7 /* InputWord.storyboard */,
+				4EA1F0BD1D28134400D362A7 /* SearchSong.storyboard */,
+				4E20CAD41D28222800A53015 /* PlayView.storyboard */,
 			);
 			path = StudySong;
 			sourceTree = "<group>";
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					4EA1F09D1D280E3900D362A7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 28J2SX74JF;
 					};
 				};
 			};
@@ -122,9 +150,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA1F0BC1D28112800D362A7 /* InputWord.storyboard in Resources */,
+				4EA1F0B41D280ED400D362A7 /* Login.storyboard in Resources */,
 				4EA1F0AC1D280E3900D362A7 /* LaunchScreen.storyboard in Resources */,
 				4EA1F0A91D280E3900D362A7 /* Assets.xcassets in Resources */,
 				4EA1F0A71D280E3900D362A7 /* Main.storyboard in Resources */,
+				4EA1F0BE1D28134400D362A7 /* SearchSong.storyboard in Resources */,
+				4E20CAD51D28222800A53015 /* PlayView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA1F0B61D2810A800D362A7 /* LoginViewController.swift in Sources */,
+				4E20CAD31D281C4800A53015 /* SearchSongViewController.swift in Sources */,
+				4E20CAD71D28230500A53015 /* PlayViewViewController.swift in Sources */,
 				4EA1F0A41D280E3900D362A7 /* ViewController.swift in Sources */,
+				4EA1F0BA1D2810FD00D362A7 /* RememberWordCustomCell.swift in Sources */,
 				4EA1F0A21D280E3900D362A7 /* AppDelegate.swift in Sources */,
+				4EA1F0B81D2810B600D362A7 /* InputWordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StudySong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.sonix.tsubasa.watanabe.StudySong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +300,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StudySong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.sonix.tsubasa.watanabe.StudySong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +329,7 @@
 				4EA1F0B21D280E3900D362A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

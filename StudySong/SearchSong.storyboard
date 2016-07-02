@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Song View Controller-->
+        <scene sceneID="80p-tr-bCE">
+            <objects>
+                <viewController storyboardIdentifier="SearchSong" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aYX-Vd-Msf" customClass="SearchSongViewController" customModule="StudySong" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gcf-5X-Yu2"/>
+                        <viewControllerLayoutGuide type="bottom" id="8E6-G4-BBn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nu5-jI-BgP">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please input favorite song" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMm-ug-jz5">
+                                <rect key="frame" x="101" y="103" width="198" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zp8-3i-UIy">
+                                <rect key="frame" x="185" y="285" width="30" height="30"/>
+                                <state key="normal" title="入力"/>
+                                <connections>
+                                    <action selector="onClickEnterButton:" destination="aYX-Vd-Msf" eventType="touchUpInside" id="wJB-ON-CYO"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ra-0Z-WoK">
+                                <rect key="frame" x="40" y="144" width="320" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1EY-MQ-Com">
+                                <rect key="frame" x="40" y="235" width="320" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ9-dK-9Ay">
+                                <rect key="frame" x="185" y="335" width="30" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="onClickBackButton:" destination="aYX-Vd-Msf" eventType="touchUpInside" id="aTW-MA-JnM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please input that song artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybk-PN-Omh">
+                                <rect key="frame" x="93" y="194" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1EY-MQ-Com" secondAttribute="trailing" constant="20" id="24W-lP-8fU"/>
+                            <constraint firstItem="zp8-3i-UIy" firstAttribute="centerY" secondItem="Nu5-jI-BgP" secondAttribute="centerY" id="3mc-Ih-Ycs"/>
+                            <constraint firstItem="ybk-PN-Omh" firstAttribute="centerX" secondItem="Nu5-jI-BgP" secondAttribute="centerX" id="5jc-yp-lBp"/>
+                            <constraint firstItem="mMm-ug-jz5" firstAttribute="centerX" secondItem="Nu5-jI-BgP" secondAttribute="centerX" id="Ipk-hc-Xp7"/>
+                            <constraint firstItem="zp8-3i-UIy" firstAttribute="top" secondItem="1EY-MQ-Com" secondAttribute="bottom" constant="20" id="Ptr-fk-hi9"/>
+                            <constraint firstItem="1EY-MQ-Com" firstAttribute="centerX" secondItem="Nu5-jI-BgP" secondAttribute="centerX" id="Sx5-w2-m5K"/>
+                            <constraint firstItem="IQ9-dK-9Ay" firstAttribute="centerX" secondItem="Nu5-jI-BgP" secondAttribute="centerX" id="ZcE-Gb-J1M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3ra-0Z-WoK" secondAttribute="trailing" constant="20" id="chB-8Z-AxX"/>
+                            <constraint firstItem="3ra-0Z-WoK" firstAttribute="leading" secondItem="Nu5-jI-BgP" secondAttribute="leadingMargin" constant="20" id="esX-vf-PTg"/>
+                            <constraint firstItem="1EY-MQ-Com" firstAttribute="leading" secondItem="Nu5-jI-BgP" secondAttribute="leadingMargin" constant="20" id="hRP-UW-iR3"/>
+                            <constraint firstItem="IQ9-dK-9Ay" firstAttribute="top" secondItem="zp8-3i-UIy" secondAttribute="bottom" constant="20" id="hi4-sr-XNG"/>
+                            <constraint firstItem="3ra-0Z-WoK" firstAttribute="centerX" secondItem="Nu5-jI-BgP" secondAttribute="centerX" id="jEo-Kf-6ZO"/>
+                            <constraint firstItem="3ra-0Z-WoK" firstAttribute="top" secondItem="mMm-ug-jz5" secondAttribute="bottom" constant="20" id="jjc-pX-5AR"/>
+                            <constraint firstItem="ybk-PN-Omh" firstAttribute="top" secondItem="3ra-0Z-WoK" secondAttribute="bottom" constant="20" id="ta1-So-7gR"/>
+                            <constraint firstItem="1EY-MQ-Com" firstAttribute="top" secondItem="ybk-PN-Omh" secondAttribute="bottom" constant="20" id="xla-kn-Tbx"/>
+                            <constraint firstItem="zp8-3i-UIy" firstAttribute="centerX" secondItem="Nu5-jI-BgP" secondAttribute="centerX" id="xvT-bN-5Ja"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <outlet property="inputArtistTextField" destination="1EY-MQ-Com" id="ast-ys-VFU"/>
+                        <outlet property="inputSongTextField" destination="3ra-0Z-WoK" id="aMi-4l-y93"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cu3-Bd-qnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="376"/>
+        </scene>
+    </scenes>
+</document>

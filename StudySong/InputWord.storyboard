@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Input Word View Controller-->
+        <scene sceneID="VcX-Lo-6U6">
+            <objects>
+                <viewController storyboardIdentifier="InputWord" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oTc-oz-kxO" customClass="InputWordViewController" customModule="StudySong" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b4q-4m-3gY"/>
+                        <viewControllerLayoutGuide type="bottom" id="cwb-FJ-mFp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3ZI-Dh-5rA">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BvJ-Jo-xUi">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="4vq-WI-aGh"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="xMW-Q0-JdP">
+                                        <nil key="title"/>
+                                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" id="x9n-Ed-Zpz">
+                                            <rect key="frame" x="65" y="53" width="270" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <barButtonItem key="rightBarButtonItem" title="完了" id="9t8-FU-Ybh">
+                                            <connections>
+                                                <action selector="onClickEnterButton:" destination="oTc-oz-kxO" id="Qpc-dW-xlJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="46" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KBP-fT-Uw8">
+                                <rect key="frame" x="0.0" y="90" width="400" height="466"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RememberWordCustomCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="RememberWordCustomCell" id="b20-N9-Xnw" customClass="RememberWordCustomCell" customModule="StudySong" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="400" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b20-N9-Xnw" id="gV8-2M-CeA">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58a-Dx-uuP">
+                                                    <rect key="frame" x="18" y="12" width="364" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="58a-Dx-uuP" firstAttribute="leading" secondItem="gV8-2M-CeA" secondAttribute="leadingMargin" constant="10" id="Rfb-D1-MGd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="58a-Dx-uuP" secondAttribute="trailing" constant="10" id="du4-Kv-2oa"/>
+                                                <constraint firstItem="58a-Dx-uuP" firstAttribute="centerY" secondItem="gV8-2M-CeA" secondAttribute="centerY" id="pJi-Ua-MaR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="wordLabel" destination="58a-Dx-uuP" id="2Me-Ig-nEA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="oTc-oz-kxO" id="ZRl-47-pFY"/>
+                                    <outlet property="delegate" destination="oTc-oz-kxO" id="9dk-67-htf"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="覚えたい単語を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kv3-vc-9It">
+                                <rect key="frame" x="73" y="30" width="255" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BvJ-Jo-xUi" secondAttribute="trailing" id="3mT-sR-96X"/>
+                            <constraint firstItem="BvJ-Jo-xUi" firstAttribute="top" secondItem="3ZI-Dh-5rA" secondAttribute="top" id="AYO-vi-LJy"/>
+                            <constraint firstItem="kv3-vc-9It" firstAttribute="top" secondItem="b4q-4m-3gY" secondAttribute="bottom" constant="10" id="C2P-gn-B4b"/>
+                            <constraint firstItem="kv3-vc-9It" firstAttribute="centerX" secondItem="3ZI-Dh-5rA" secondAttribute="centerX" id="HvY-Oi-WdT"/>
+                            <constraint firstItem="BvJ-Jo-xUi" firstAttribute="bottom" secondItem="KBP-fT-Uw8" secondAttribute="top" id="LdJ-zn-zuc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KBP-fT-Uw8" secondAttribute="trailing" id="PnV-d9-AuV"/>
+                            <constraint firstItem="KBP-fT-Uw8" firstAttribute="leading" secondItem="3ZI-Dh-5rA" secondAttribute="leadingMargin" id="SRe-LE-oag"/>
+                            <constraint firstItem="KBP-fT-Uw8" firstAttribute="bottom" secondItem="cwb-FJ-mFp" secondAttribute="top" id="Y8e-NY-zcJ"/>
+                            <constraint firstItem="BvJ-Jo-xUi" firstAttribute="leading" secondItem="KBP-fT-Uw8" secondAttribute="leading" id="ZgC-9z-nrx"/>
+                            <constraint firstItem="KBP-fT-Uw8" firstAttribute="top" secondItem="BvJ-Jo-xUi" secondAttribute="bottom" id="cHL-yN-bx1"/>
+                            <constraint firstItem="BvJ-Jo-xUi" firstAttribute="trailing" secondItem="KBP-fT-Uw8" secondAttribute="trailing" id="lXc-q7-9wr"/>
+                            <constraint firstItem="BvJ-Jo-xUi" firstAttribute="leading" secondItem="3ZI-Dh-5rA" secondAttribute="leading" id="t2v-0w-hfj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PnV-d9-AuV"/>
+                                <exclude reference="SRe-LE-oag"/>
+                                <exclude reference="cHL-yN-bx1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <outlet property="InputTextField" destination="x9n-Ed-Zpz" id="rgQ-Zg-Mhl"/>
+                        <outlet property="enterButton" destination="9t8-FU-Ybh" id="OGO-u5-2nW"/>
+                        <outlet property="tableView" destination="KBP-fT-Uw8" id="HZ0-DA-B4G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lh3-hR-oNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="428" y="379"/>
+        </scene>
+    </scenes>
+</document>

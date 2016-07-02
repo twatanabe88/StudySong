@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="k2j-NE-p0m">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="hoV-rZ-d27">
+            <objects>
+                <viewController id="k2j-NE-p0m" customClass="LoginViewController" customModule="StudySong" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z6g-ar-bPa"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZbJ-vV-7z2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qys-Pm-vou">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPS-Rc-2RV">
+                                <rect key="frame" x="177" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickLoginButton:" destination="k2j-NE-p0m" eventType="touchUpInside" id="hEK-Lr-gMI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JPS-Rc-2RV" firstAttribute="centerY" secondItem="Qys-Pm-vou" secondAttribute="centerY" id="00U-F2-D3x"/>
+                            <constraint firstItem="JPS-Rc-2RV" firstAttribute="centerX" secondItem="Qys-Pm-vou" secondAttribute="centerX" id="yUC-AO-7J1"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="600"/>
+                    <connections>
+                        <outlet property="loginButton" destination="JPS-Rc-2RV" id="ohU-cN-5jt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cri-Ub-5ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="299"/>
+        </scene>
+    </scenes>
+</document>
